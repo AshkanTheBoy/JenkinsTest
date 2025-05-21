@@ -4,6 +4,17 @@ pipeline {
         stage('build') {
             steps {
                 sh 'mvn --version'
+                echo "Hey!!"
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
